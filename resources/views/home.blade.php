@@ -33,6 +33,7 @@
           font-size: 3.5rem;
         }
       }
+
     </style>
 
     
@@ -41,18 +42,29 @@
   <style type="text/css">/* Chart.js */
 @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
   <body>
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-  <div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-      <a class="nav-link px-3" href="#">Sign out</a>
-    </div>
-  </div>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow" style="height: 50px;">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#">Sign out</a>
+            </div>
+        </div>
+        <div class="card" style="width: 200px; height: 300px;">
+            <img class="card-img-top" src="ruta/a/la/imagen/del/usuario.jpg" alt="Imagen del usuario">
+            <div class="card-body">
+                <h5 class="card-title">Nombre del usuario</h5>
+                <p class="card-text">Alguna información sobre este usuario.</p>
+                <a href="#" class="btn btn-primary">Ver perfil</a>
+            </div>
+        </div>
+ 
+</body>
   </header>
+  
 
 <div class="container-fluid">
     <div class="row">
@@ -132,34 +144,34 @@
       </div>
     </nav>
 
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="chartjs-size-monitor">
+        <div class="chartjs-size-monitor-expand">
+          <div class=""></div>
+        </div>
+        <div class="chartjs-size-monitor-shrink">
+          <div class=""></div>
+        </div>
+      </div>
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Dashboard</h1>
-        <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-toolbar mb-2 mb-md-0" style="margin-right: 120px;">
           <div class="btn-group me-2">
             <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
             <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
           </div>
           <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-            This week
+             This week
           </button>
         </div>
       </div>
+    </main>
+
       
-      <div class="position-fixed top-0 end-0 m-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="ruta/a/la/imagen/del/usuario.jpg" alt="Imagen del usuario">
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre del usuario</h5>
-                        <p class="card-text">Alguna información sobre este usuario.</p>
-                        <a href="#" class="btn btn-primary">Ver perfil</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fin de la tarjeta del usuario -->
-        </div>
-    </div>
+     
+</div>
+         
     <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="772" height="324" style="display: block; width: 386px; height: 162px;"></canvas>
 
 <h2>Section title</h2>
